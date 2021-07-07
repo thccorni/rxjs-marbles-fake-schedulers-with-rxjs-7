@@ -18,7 +18,7 @@ describe('rxjs-counter', () => {
 
       const emit = jest.spyOn(rootInstance.countChange, 'emit');
       const button = root.shadowRoot.querySelector<HTMLButtonElement>(
-        'button[aria-label="increment"]'
+        'button[aria-label="increment"]',
       );
 
       button.click(); // 1
@@ -32,6 +32,6 @@ describe('rxjs-counter', () => {
 
       expect(emit).toBeCalledTimes(1);
       expect(emit).toBeCalledWith(4);
-    })
+    }),
   );
 });
