@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <title>rxjs counter</title>
+
+    <script
+      type="module"
+      src="/build/rxjs-marbles-fake-schedulers-with-rxjs-7.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="/build/rxjs-marbles-fake-schedulers-with-rxjs-7.js"
+    ></script>
+  </head>
+  <body>
+    <rxjs-counter></rxjs-counter>
+
+    <script>
+      const counter = document.querySelector('rxjs-counter');
+      counter.addEventListener('countChange', (count) => {
+        console.log({ count });
+      });
+    </script>
+  </body>
+</html>
