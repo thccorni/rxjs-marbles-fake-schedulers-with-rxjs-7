@@ -4,8 +4,8 @@ This repo tries to reproduce a problem with `fakeSchedulers` from <https://githu
 
 Seems it behaves different in v6 <=> v7.
 
-- <package.json.working> contains the working dependency versions
-- <package.json> contains the broken versions
+- [package.json.working](package.json.working) contains the working dependency versions
+- [package.json](package.json) contains the broken versions
 
 ## Getting Started
 
